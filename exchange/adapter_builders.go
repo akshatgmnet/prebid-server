@@ -104,6 +104,7 @@ import (
 	"github.com/prebid/prebid-server/v4/adapters/eplanning"
 	"github.com/prebid/prebid-server/v4/adapters/epom"
 	"github.com/prebid/prebid-server/v4/adapters/escalax"
+	"github.com/prebid/prebid-server/v4/adapters/eskimi"
 	"github.com/prebid/prebid-server/v4/adapters/exco"
 	"github.com/prebid/prebid-server/v4/adapters/feedad"
 	"github.com/prebid/prebid-server/v4/adapters/flatads"
@@ -231,6 +232,7 @@ import (
 	"github.com/prebid/prebid-server/v4/adapters/tappx"
 	"github.com/prebid/prebid-server/v4/adapters/targetVideo"
 	"github.com/prebid/prebid-server/v4/adapters/teads"
+	"github.com/prebid/prebid-server/v4/adapters/teal"
 	"github.com/prebid/prebid-server/v4/adapters/telaria"
 	"github.com/prebid/prebid-server/v4/adapters/teqblaze"
 	"github.com/prebid/prebid-server/v4/adapters/theadx"
@@ -376,6 +378,7 @@ func newAdapterBuilders() map[openrtb_ext.BidderName]adapters.Builder {
 		openrtb_ext.BidderEPlanning:         eplanning.Builder,
 		openrtb_ext.BidderEpom:              epom.Builder,
 		openrtb_ext.BidderEscalax:           escalax.Builder,
+		openrtb_ext.BidderEskimi:            eskimi.Builder,
 		openrtb_ext.BidderExco:              exco.Builder,
 		openrtb_ext.BidderEVolution:         evolution.Builder,
 		openrtb_ext.BidderFeedAd:            feedad.Builder,
@@ -506,6 +509,7 @@ func newAdapterBuilders() map[openrtb_ext.BidderName]adapters.Builder {
 		openrtb_ext.BidderTappx:             tappx.Builder,
 		openrtb_ext.BidderTargetVideo:       targetVideo.Builder,
 		openrtb_ext.BidderTeads:             teads.Builder,
+		openrtb_ext.BidderTeal:              teal.Builder,
 		openrtb_ext.BidderTelaria:           telaria.Builder,
 		openrtb_ext.BidderTeqBlaze:          teqblaze.Builder,
 		openrtb_ext.BidderTheadx:            theadx.Builder,
